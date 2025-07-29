@@ -1,21 +1,13 @@
 /**
-<<<<<<< HEAD
  * Функция для расчета прибыли
-=======
- * Функция для расчета выручки
->>>>>>> dc778000dd37809fa3a8078dcc018a59579f5714
  * @param purchase запись о покупке
  * @param _product карточка товара
  * @returns {number}
  */
 function calculateSimpleRevenue(purchase, _product) {
-<<<<<<< HEAD
     // @TODO: Расчет прибыли от операции
     const { discount, sale_price, quantity } = purchase;
     return sale_price * quantity * (1 - (discount / 100));
-=======
-   // @TODO: Расчет выручки от операции
->>>>>>> dc778000dd37809fa3a8078dcc018a59579f5714
 }
 
 /**
@@ -27,7 +19,6 @@ function calculateSimpleRevenue(purchase, _product) {
  */
 function calculateBonusByProfit(index, total, seller) {
     // @TODO: Расчет бонуса от позиции в рейтинге
-<<<<<<< HEAD
     const { profit } = seller;
 
     if (index === 0) {
@@ -39,8 +30,6 @@ function calculateBonusByProfit(index, total, seller) {
     } else { // Для всех остальных
         return +(profit * 0.05).toFixed(2);
     }
-=======
->>>>>>> dc778000dd37809fa3a8078dcc018a59579f5714
 }
 
 /**
@@ -51,7 +40,6 @@ function calculateBonusByProfit(index, total, seller) {
  */
 function analyzeSalesData(data, options) {
     // @TODO: Проверка входных данных
-<<<<<<< HEAD
     if (!data
         || !Array.isArray(data.sellers) || data.sellers.length === 0
         || !Array.isArray(data.products) || data.products.length === 0
@@ -145,20 +133,3 @@ function analyzeSalesData(data, options) {
         bonus: seller.bonus, // Число с двумя знаками после точки, бонус продавца
     }));
 }
-=======
-
-    // @TODO: Проверка наличия опций
-
-    // @TODO: Подготовка промежуточных данных для сбора статистики
-
-    // @TODO: Индексация продавцов и товаров для быстрого доступа
-
-    // @TODO: Расчет выручки и прибыли для каждого продавца
-
-    // @TODO: Сортировка продавцов по прибыли
-
-    // @TODO: Назначение премий на основе ранжирования
-
-    // @TODO: Подготовка итоговой коллекции с нужными полями
-}
->>>>>>> dc778000dd37809fa3a8078dcc018a59579f5714
